@@ -10,7 +10,9 @@ This is a testing phase designed to control walking at the high-level and arm mo
 # Set up 
 For information on the environment, please refer to the following repository \
 https://github.com/KobeKosenRobotics/rosenv_for_unitree#reference \
-https://github.com/unitreerobotics/unitree_sdk2_python
+https://github.com/unitreerobotics/unitree_sdk2_python \
+https://github.com/YAOSHUNKI/unitree-g1-high_level-ros2
+
 
 # Test
 ## Terminal 1
