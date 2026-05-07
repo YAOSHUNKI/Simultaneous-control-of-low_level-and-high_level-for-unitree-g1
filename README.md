@@ -21,7 +21,8 @@ ros2 run unitree_ros2_example g1_high_level_ros2
 ```bash
 python3 /home/colcon_ws/src/unitree_sdk2_python/example/g1/high_level/g1_arm7_sdk_dds_example.py eth0
 ```
-## Error during setup
+
+## Error during test
 ### the APT repository is missing a signature key
 If the APT repository is missing a signature key
 ```bash
