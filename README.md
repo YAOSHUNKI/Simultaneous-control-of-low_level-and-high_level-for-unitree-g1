@@ -12,7 +12,8 @@ For information on the environment, please refer to the following repository \
 https://github.com/KobeKosenRobotics/rosenv_for_unitree#reference \
 https://github.com/unitreerobotics/unitree_sdk2_python
 
-## Set up unitree_sdk2_python
+## Error during setup
+### the APT repository is missing a signature key
 If the APT repository is missing a signature key
 ```bash
 NO_PUBKEY FB0B24895113F120
@@ -24,3 +25,11 @@ sudo mkdir -p /etc/apt/keyrings
 sudo gpg --keyserver keyserver.ubuntu.com --recv-keys FB0B24895113F120
 sudo gpg --export FB0B24895113F120 | sudo tee /etc/apt/keyrings/fix.gpg > /dev/null
 ```
+### ModuleNotFoundError: No module named 'cyclonedds'
+If you encounter an error like this when running an .src file, please run the following command:
+```bash
+export CYCLONEDDS_HOME=/usr/local
+export CMAKE_PREFIX_PATH=/usr/local
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+```
+Please enter the following command to verify that CycloneDDS has been installed
