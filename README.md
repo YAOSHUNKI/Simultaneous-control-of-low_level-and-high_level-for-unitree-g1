@@ -33,3 +33,16 @@ export CMAKE_PREFIX_PATH=/usr/local
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 ```
 Please enter the following command to verify that CycloneDDS has been installed
+```bash
+ls /usr/local/lib | grep dds
+```
+If the result looks like this, the installation was successful.
+```bash
+libddsc.so
+libddscxx.so
+```
+If it works, please update the version.
+```bash
+python3 -m pip uninstall -y cyclonedds
+python3 -m pip install "cyclonedds==0.10.2"
+```
