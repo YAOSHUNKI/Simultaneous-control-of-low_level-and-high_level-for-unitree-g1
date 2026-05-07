@@ -69,4 +69,17 @@ After revision:
 ```bash
 from . import idl, utils, core, rpc, go2
 ```
-
+### cannot open shared object file: No such file or directory
+Find the lib directory
+```bash
+find /home/colcon_ws/src/unitree_sdk2_python -name "crc_aarch64.so"
+```
+Create a directory in the `install` directory
+```bash
+mkdir -p /home/colcon_ws/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils/lib
+```
+.so copy
+```bash
+cp /home/colcon_ws/src/unitree_sdk2_python/unitree_sdk2py/utils/lib/crc_aarch64.so \
+/home/colcon_ws/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/utils/lib/
+```
