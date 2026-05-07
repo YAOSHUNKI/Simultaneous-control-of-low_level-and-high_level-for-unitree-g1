@@ -46,3 +46,16 @@ If it works, please update the version.
 python3 -m pip uninstall -y cyclonedds
 python3 -m pip install "cyclonedds==0.10.2"
 ```
+### ImportError: cannot import name 'b2'
+Please edit init.py
+```bash
+vi /home/colcon_ws/install/unitree_sdk2py/lib/python3.10/site-packages/unitree_sdk2py/__init__.py
+```
+Before revision:
+```bash
+from . import idl, utils, core, rpc, go2, b2
+```
+After revision:
+```bash
+from . import idl, utils, core, rpc, go2
+```
