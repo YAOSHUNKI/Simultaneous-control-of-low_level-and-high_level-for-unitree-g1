@@ -11,3 +11,13 @@ This is a testing phase designed to control walking at the high-level and arm mo
 For information on the environment, please refer to the following repository \
 https://github.com/KobeKosenRobotics/rosenv_for_unitree#reference \
 https://github.com/unitreerobotics/unitree_sdk2_python
+
+## Set up unitree_sdk2_python
+If the APT repository is missing a signature key
+```bash
+NO_PUBKEY FB0B24895113F120
+```
+If you encounter this error, please run the following script
+```bash
+NO_PUBKEY FB0B24895113F120
+```
