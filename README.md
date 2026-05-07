@@ -19,5 +19,8 @@ NO_PUBKEY FB0B24895113F120
 ```
 If you encounter this error, please run the following script
 ```bash
-NO_PUBKEY FB0B24895113F120
+sudo apt install -y gnupg
+sudo mkdir -p /etc/apt/keyrings
+sudo gpg --keyserver keyserver.ubuntu.com --recv-keys FB0B24895113F120
+sudo gpg --export FB0B24895113F120 | sudo tee /etc/apt/keyrings/fix.gpg > /dev/null
 ```
